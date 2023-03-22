@@ -1,11 +1,11 @@
 package ru.stepchenkov.labs.lab5.view;
 
-import ru.stepchenkov.labs.lab4.controller.GfgController;
-import ru.stepchenkov.labs.lab4.model.GfgModel;
 import ru.stepchenkov.labs.lab5.controller.CoderController;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class CoderView extends JFrame {
 
@@ -19,6 +19,7 @@ public class CoderView extends JFrame {
     private JButton clearButton;
     private JButton encryptButton;
     private JButton decryptButton;
+
     public CoderView(CoderController controller) {
         this.controller = controller;
     }
@@ -28,11 +29,15 @@ public class CoderView extends JFrame {
         add(createMainPanel());
 
         encryptButton.addActionListener(e -> {
+            controller.getRandomNumberInts();
+            String key = Arrays.stream(controller.getModel().getKeySet()).boxed().map(String::valueOf).collect(Collectors.joining());
+            keyField.setText(key);
 
+            outputField.setText(controller.encrypt(inputField.getText()));
         });
 
         decryptButton.addActionListener(e -> {
-            
+
         });
 
         clearButton.addActionListener(e -> {
@@ -72,11 +77,11 @@ public class CoderView extends JFrame {
 
         inputInfo.setBounds(50, 50, 170, 20);
         keyInfo.setBounds(50, 100, 150, 20);
-        outputInfo.setBounds(250, 100, 150, 20);
+        outputInfo.setBounds(260, 100, 150, 20);
         inputField.setBounds(50, 75, 200, 20);
         outputField.setBounds(260, 125, 200, 20);
         keyField.setBounds(50, 125, 200, 20);
-        clearButton.setBounds(300, 175, 140, 20);
+        clearButton.setBounds(310, 175, 140, 20);
         encryptButton.setBounds(50, 175, 120, 20);
         decryptButton.setBounds(180, 175, 120, 20);
 

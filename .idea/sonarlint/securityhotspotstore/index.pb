@@ -1,14 +1,6 @@
 
-e
-5src/ru/stepchenkov/labs/viginener2/model/Vegener.java,f\3\f30bb70749fa6c7f17531e5f4102ce7ee0b0d742
-h
-8src/ru/stepchenkov/labs/viginener2/view/VegenerView.java,e\2\e21ba8c996fd002129a0a3a807bfddd5b51c3c34
-v
-Fsrc/ru/stepchenkov/labs/viginener2/controller/VegenenerController.java,6\8\68988ba09c8f6f1a4c7055acdefe77df52b0aad8
 c
 3src/ru/stepchenkov/labs/lab3/view/EncryptoView.java,0\0\009e838d802197b1fe4140324a952ca828440276
-\
-,src/ru/stepchenkov/labs/viginener2/Main.java,0\e\0eda4b3c4110cf87a82acee9940289533010bbb7
 o
 ?src/ru/stepchenkov/labs/lab3/controller/EncryptoController.java,6\2\6220ac0a7ff8a59707cb133985b8e9f17055338e
 _
@@ -21,3 +13,10 @@ V
 0src/ru/stepchenkov/labs/lab4/model/GfgModel.java,c\f\cf4f01510ea757eb814ec51c84af0ac90e451384
 j
 :src/ru/stepchenkov/labs/lab4/controller/GfgController.java,e\8\e86ad5da0659e50d0e0814a8afac059adf25aabb
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+^
+.src/ru/stepchenkov/labs/lab4/view/GfgView.java,9\f\9f446de7df9fb403c65fee181a276cee688ecb5e
+V
+&src/ru/stepchenkov/labs/test/Main.java,c\2\c26ad69fed23e4871bd4e17f8f909f165deb18d4
